@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: url("img/IMG-0021.jpg") no-repeat right;
+    background-size: 25%;
+    background-color: #686963;
+    color: #FAFAFA;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.rosto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.texto-inicial {
+    margin: 8%;
+}
+
+h1 {
+    font-size: 20px;;
+    font-weight: bolder;
+}
+
+span {
+    color: #DB5461;
+}
+
+.destaque {
+    font-weight: bolder;
+}
+
+.btn {
+    border: 20px;
+    border-style: solid;
+    border-color: salmon; 
+    border-radius: 20%;
+    margin: 3px;
+    padding: 5 px ;
+}
+
+.mgn {
+    margin-top:
+}
