@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+:root{
+    --corDosLinks: #DB5461;
+}
+
 body {
     height: 100vh;
     background: url("img/IMG-0021.jpg") no-repeat right;
@@ -23,12 +27,12 @@ body {
 }
 
 h1 {
-    font-size: 20px;;
+    font-size: 20px;
     font-weight: bolder;
 }
 
 span {
-    color: #DB5461;
+    color: var(--corDosLinks);
 }
 
 .destaque {
@@ -36,14 +40,27 @@ span {
 }
 
 .btn {
-    border: 20px;
-    border-style: solid;
-    border-color: salmon; 
-    border-radius: 20%;
-    margin: 3px;
-    padding: 5 px ;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    padding: 1em;
+    align-items: center;
 }
 
-.mgn {
-    margin-top:
+.btnPrimary {
+    background-color: transparent;
+    color: whitesmoke;
+    text-decoration: none;
+    border: 5px solid var(--corDosLinks);
+    border-radius: 10px;
+    padding: 1em;
 }
+
+.btnSecondary {
+    background-color: var(--corDosLinks);
+    border: 5px solid transparent;
+    padding: 1em;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
