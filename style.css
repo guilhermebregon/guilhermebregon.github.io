@@ -3,27 +3,48 @@
     padding: 0;
 }
 
-:root{
-    --corDosLinks: #DB5461;
+:root {
+    --primary-color: #e0e0e0;
+    /* Light Gray */
+    --secondary-color: #95a5a6;
+    /* Silver */
+    --accent-color: #e67e22;
+    /* Orange (Complementary to Blue Links) */
+    --background-color: #ffffff;
+    /* White */
+    --text-color: #333333;
+    /* Dark Gray */
+    --button-text-color: #ffffff;
+    /* White Button Text Color */
+    --curriculo-button-text-color: #333333;
+    /* Dark Gray Text Color for "Curriculo" Button */
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    height: 100vh;
-    background: url("img/IMG-0021.jpg") no-repeat right;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: url("img/IMG-0021.jpg") no-repeat left;
     background-size: 25%;
-    background-color: #686963;
-    color: #FAFAFA;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     font-family: 'Source Code Pro', monospace;
 }
 
 .rosto {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 }
 
 .texto-inicial {
     margin: 8%;
+    text-align: center;
 }
 
 h1 {
@@ -32,11 +53,25 @@ h1 {
 }
 
 span {
-    color: var(--corDosLinks);
+    color: var(--accent-color);
 }
 
-.destaque {
-    font-weight: bolder;
+a {
+    color: #3498db;
+    /* Blue Link Color */
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #fff;
+    /* Customize background color */
+}
+
+.nav-item.active {
+    background-color: #007bff;
+    /* Customize the active link background color */
+    color: #fff;
+    /* Customize the active link text color */
 }
 
 .btn {
@@ -50,17 +85,49 @@ span {
 
 .btnPrimary {
     background-color: transparent;
-    color: whitesmoke;
+    color: var(--button-text-color);
+    /* White Button Text Color */
     text-decoration: none;
-    border: 5px solid var(--corDosLinks);
+    border: 5px solid var(--accent-color);
     border-radius: 10px;
     padding: 1em;
 }
 
 .btnSecondary {
-    background-color: var(--corDosLinks);
+    background-color: var(--accent-color);
     border: 5px solid transparent;
     padding: 1em;
     margin-left: 20px;
     border-radius: 10px;
-  }
+}
+
+.btnSecondary.curriculo {
+    background-color: var(--accent-color);
+    text-decoration: none;
+    border: 5px solid var(--accent-color);
+    border-radius: 10px;
+    padding: 1em;
+    color: var(--curriculo-button-text-color);
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+/* Center the image and maintain aspect ratio */
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
