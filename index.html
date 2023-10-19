@@ -5,29 +5,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header></header>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5"
+        style="display: flex;">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Guilherme</span>Bregon</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Início</a>
+                <a href="#about" class="nav-item nav-link">Sobre Mim</a>
+                <a href="#formacao" class="nav-item nav-link">Formação</a>
+                <a href="#skills" class="nav-item nav-link">Skills</a>
+                <a href="#servicos" class="nav-item nav-link">Serviços</a>
+                <a href="#portfolio" class="nav-item nav-link">Portfólio</a>
+                <a href="#contato" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="" class="btn btn-outline-primary d-none d-lg-block">Me Contrate</a>
+        </div>
+    </nav>
+    <header>
+
+
+    </header>
     <main class="rosto">
-        <section class="texto-inicial">
-        <!----------------------------------Texto inicial------------------------------------------->
-        <div>
-            <p>Olá!</p>
-            <h1>Eu sou o Guilherme, <span>desenvolvedor full-stack</span> com experiência em criação de sites <span class="destaque">modernos</span> e <span class="destaque">seguros</span>.</h1>
+        <div class="texto-inicial">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 pb-4 pb-lg-0">
+                        <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/IMG-0021.jpg"
+                            alt="Profile Image">
+                    </div>
+                    <div class="col-lg-7">
+                        <p>Olá!</p>
+                        <h1>Eu sou o Guilherme, <span>desenvolvedor full-stack</span> com experiência em criação de
+                            sites <span class="destaque">modernos</span> e <span class="destaque">seguros</span>.</h1>
+                        <div class="btn">
+                            <a class="btnSecondary curriculo">Baixar CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--------------------------------------Botões---------------------------------------------->
-        <div class="btn">
-            <a class="btnPrimary">Currículo</a>
-            <a class="btnSecondary">Me contrate</a>
+        <!--------------------------------------Sobre---------------------------------------------->
+        <div class="container about" id="about">
+            <div class="container-fluid py-5" id="about">
+                <div class="container">
+                    <div class="position-relative d-flex align-items-center justify-content-center">
+                        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Sobre
+                        </h1>
+                        <h1 class="position-absolute text-uppercase text-primary">Sobre Mim</h1>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <h3 class="mb-4">UI/UX Designer & Web Developer</h3>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos
+                                ipsum
+                                est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum. Amet
+                                dolor stet lorem diam dolor justo et dolor dolor dolor</p>
+                            <div class="row mb-3">
+                                <div class="col-sm-6 py-2">
+                                    <h6>Nome: <span class="text-secondary">Guilherme Bregon</span></h6>
+                                </div>
+                                <div class="col-sm-6 py-2">
+                                    <h6>Data de nascimento: <span class="text-secondary">22 Julho 1991</span></h6>
+                                </div>
+                                <div class="col-sm-6 py-2">
+                                    <h6>Formação: <span class="text-secondary">Análise e Desenvolvimento de
+                                            Sistemas</span></h6>
+                                </div>
+                                <div class="col-sm-6 py-2">
+                                    <h6>Experiência: <span class="text-secondary">2 anos</span></h6>
+                                </div>
+                                <div class="col-sm-6 py-2">
+                                    <h6>Telefone: <span class="text-secondary">+55 (48)99118-2640</span></h6>
+                                </div>
+                                <div class="col-sm-6 py-2">
+                                    <h6>Email: <span class="text-secondary">gui.b.dev@gmail.com</span></h6>
+                                </div>
+                                <div class="col-sm-6 py-2">
+                                    <h6>Localidade: <span class="text-secondary">Balneário Arroio do Silva/SC -
+                                            Brasil</span></h6>
+                                </div>
+                                <div class="col-sm-6 py-2">
+                                    <h6>Freelance: <span class="text-secondary">Disponível</span></h6>
+                                </div>
+                            </div>
+                            <a href="" class="btn btn-outline-primary mr-4">Me contrate</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+        <!--Formação e experiência-->
+        <div class="container formation-experience" id="formation-experience">
+            <div class="container-fluid py-5">
+                <div class="container">
+                    <div class="position-relative d-flex align-items-center justify-content-center">
+                        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">
+                            Formation & Experience</h1>
+                        <h1 class="position-absolute text-uppercase text-primary">My Journey</h1>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 pb-4 pb-lg-0">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat molestias veritatis
+                            voluptatibus autem qui, sapiente repellat, aliquid dolore numquam hic, distinctio sunt velit
+                            sed reiciendis quos obcaecati dignissimos exercitationem modi.
+                            <!-- Add an image or content for your formation and experiences -->
+                        </div>
+                        <div class="col-lg-7">
+                            <!-- Add text and details about your formation and experiences here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer></footer>
+
+
 </body>
 
 </html>
